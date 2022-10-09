@@ -1,4 +1,4 @@
-package com.hfad.playlist___maker
+package com.hfad.playlist__maker
 
 import org.junit.Test
 

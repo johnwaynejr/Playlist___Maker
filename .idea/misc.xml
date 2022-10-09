@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist___Maker/app/src/main/res/layout/activity_main.xml" value="0.1828125" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist__Maker/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist__Maker/app/src/main/res/layout/activity_settigs.xml" value="0.196875" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist__Maker/app/src/main/res/layout/activity_settings.xml" value="0.25" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist___Maker/app/src/main/res/layout/activity_find.xml" value="0.196875" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist___Maker/app/src/main/res/layout/activity_main.xml" value="0.196875" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist___Maker/app/src/main/res/layout/activity_medialibrary.xml" value="0.196875" />
+        <entry key="..\:/Users/Alpha/AndroidStudioProjects/Playlist___Maker/app/src/main/res/layout/activity_settings.xml" value="0.196875" />
       </map>
     </option>
   </component>
