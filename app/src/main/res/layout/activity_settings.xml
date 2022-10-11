@@ -10,11 +10,11 @@
         android:id="@+id/tV_as_header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28px"
-        android:layout_marginTop="14px"
+        android:layout_marginStart="@dimen/as_margin"
+        android:layout_marginTop="@dimen/as_margin"
         android:text="@string/as_header_text"
         android:textColor="@color/black"
-        android:textSize="22sp"
+        android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/iV_ArrowBack"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -22,10 +22,10 @@
         android:id="@+id/iV_ArrowBack"
         android:layout_width="@dimen/as_arrow_back_size"
         android:layout_height="@dimen/as_arrow_back_size"
-        android:layout_marginStart="@dimen/as_arrow_back_margin"
-        android:layout_marginTop="@dimen/as_arrow_back_margin"
+        android:layout_marginStart="@dimen/as_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tV_as_header"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tV_as_header"
         app:srcCompat="@drawable/ic_arrow_back" />
 
     <TextView
@@ -80,40 +80,40 @@
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/as_margin_top_big"
-        android:layout_marginEnd="18px"
+        android:layout_marginEnd="@dimen/as_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tV_BlackTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_as_header"
+        app:layout_constraintTop_toTopOf="@+id/tV_BlackTheme"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/as_margin_top"
         android:layout_marginEnd="@dimen/as_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tV_ShareApp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_BlackTheme"
+        app:layout_constraintTop_toTopOf="@+id/tV_ShareApp"
         app:srcCompat="@drawable/ic_share" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/as_margin_top"
         android:layout_marginEnd="@dimen/as_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tV_WriteToSupport"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_ShareApp"
+        app:layout_constraintTop_toTopOf="@+id/tV_WriteToSupport"
         app:srcCompat="@drawable/ic_support" />
 
     <ImageView
         android:id="@+id/iV_Support"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/as_margin_top"
         android:layout_marginEnd="@dimen/as_margin"
+        app:layout_constraintBottom_toBottomOf="@+id/tV_UserNote"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_WriteToSupport"
+        app:layout_constraintTop_toTopOf="@+id/tV_UserNote"
         app:srcCompat="@drawable/ic_arrow_fwd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

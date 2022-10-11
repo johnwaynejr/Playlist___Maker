@@ -6,9 +6,8 @@
     <dimen name="mm_btn_corner_radius">20dp</dimen>
     <dimen name="mm_btn_font_size">24sp</dimen>
     <dimen name="as_arrow_back_size">24dp</dimen>
-    <dimen name="as_arrow_back_margin">20px</dimen>
-    <dimen name="as_margin">16px</dimen>
-    <dimen name="as_margin_top">42px</dimen>
-    <dimen name="as_margin_top_big">61px</dimen>
+    <dimen name="as_margin">20dp</dimen>
+    <dimen name="as_margin_top">42dp</dimen>
+    <dimen name="as_margin_top_big">61dp</dimen>
     <dimen name="as_text_size">16sp</dimen>
 </resources>
