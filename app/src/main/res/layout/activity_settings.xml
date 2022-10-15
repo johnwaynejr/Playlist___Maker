@@ -2,19 +2,18 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/colorPr"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tV_as_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TitleTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin"
         android:text="@string/as_header_text"
-        android:textColor="@color/black"
-        android:textSize="24sp"
+        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintStart_toEndOf="@+id/iV_ArrowBack"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,61 +25,50 @@
         app:layout_constraintBottom_toBottomOf="@+id/tV_as_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tV_as_header"
-        app:srcCompat="@drawable/ic_arrow_back" />
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="?attr/colorOnSecondary" />
 
     <TextView
         android:id="@+id/tV_BlackTheme"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top_big"
         android:text="@string/dark_theme"
-        android:textColor="@color/black"
-        android:textSize="@dimen/as_text_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tV_as_header" />
 
     <TextView
         android:id="@+id/tV_ShareApp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/share_app"
-        android:textColor="@color/black"
-        android:textSize="@dimen/as_text_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tV_BlackTheme" />
 
     <TextView
         android:id="@+id/tV_WriteToSupport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/mail_to_support"
-        android:textColor="@color/black"
-        android:textSize="@dimen/as_text_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tV_ShareApp" />
 
     <TextView
         android:id="@+id/tV_UserNote"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/user_agreement"
-        android:textColor="@color/black"
-        android:textSize="@dimen/as_text_size"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tV_WriteToSupport" />
 
     <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/as_margin"
+        android:id="@+id/Switch"
+        style="@style/SwitchStyle"
+        android:thumbTint="?attr/colorSecondaryVariant"
+        android:trackTint="?attr/colorSecondaryVariant"
         app:layout_constraintBottom_toBottomOf="@+id/tV_BlackTheme"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tV_BlackTheme"
@@ -88,9 +76,7 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/as_margin"
+        style="@style/MenuIconStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tV_ShareApp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tV_ShareApp"
@@ -98,9 +84,7 @@
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/as_margin"
+        style="@style/MenuIconStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tV_WriteToSupport"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tV_WriteToSupport"
@@ -108,9 +92,7 @@
 
     <ImageView
         android:id="@+id/iV_Support"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/as_margin"
+        style="@style/MenuIconStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tV_UserNote"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/tV_UserNote"

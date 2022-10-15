@@ -3,71 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
     android:orientation="vertical"
-    android:padding="15dp">
+    android:padding="15dp"
+    android:background="?attr/colorPrimary">
 
     <TextView
         android:id="@+id/tV_mm_header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TitleTextStyle"
         android:layout_gravity="start"
-        android:fontFamily="arial"
         android:paddingBottom="40dp"
         android:text="@string/main_menu_header"
         android:textColor="@color/white"
-        android:textSize="24sp" />
+        />
 
     <Button
         android:id="@+id/btnFind"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/mm_btn_height"
-        android:layout_marginBottom="@dimen/mm_btn_margin_bottom"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
+        style="@style/ButtonStyle"
         android:text="@string/btn_find_text"
-        android:textSize="@dimen/mm_btn_font_size"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
         app:icon="@drawable/ic_fnd"
-        app:iconGravity="textStart"
-        app:iconPadding="@dimen/mm_btn_icon_padding"
-        app:iconTint="@color/black"
-        app:cornerRadius="@dimen/mm_btn_corner_radius"
         />
     <Button
         android:id="@+id/btnMedia"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/mm_btn_height"
-        android:layout_marginBottom="@dimen/mm_btn_margin_bottom"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
+        style="@style/ButtonStyle"
         android:text="@string/btn_media_text"
-        android:textSize="@dimen/mm_btn_font_size"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
         app:icon="@drawable/ic_mediateka"
-        app:iconGravity="textStart"
-        app:iconPadding="@dimen/mm_btn_icon_padding"
-        app:iconTint="@color/black"
-        app:cornerRadius="@dimen/mm_btn_corner_radius"
         />
     <Button
         android:id="@+id/btnSettings"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/mm_btn_height"
-        android:layout_marginBottom="@dimen/mm_btn_margin_bottom"
-        android:layout_weight="1"
-        android:backgroundTint="@color/white"
+        style="@style/ButtonStyle"
         android:text="@string/btn_settings_text"
-        android:textSize="@dimen/mm_btn_font_size"
-        android:textColor="@color/black"
-        android:textAllCaps="false"
         app:icon="@drawable/ic_sttngs"
-        app:iconGravity="textStart"
-        app:iconPadding="@dimen/mm_btn_icon_padding"
-        app:iconTint="@color/black"
-        app:cornerRadius="@dimen/mm_btn_corner_radius"
         />
-
 </LinearLayout>
