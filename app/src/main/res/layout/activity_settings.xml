@@ -75,7 +75,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/iV_Share"
         style="@style/MenuIconStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tV_ShareApp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,7 +83,7 @@
         app:srcCompat="@drawable/ic_share" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/iV_Support"
         style="@style/MenuIconStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tV_WriteToSupport"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,7 +91,7 @@
         app:srcCompat="@drawable/ic_support" />
 
     <ImageView
-        android:id="@+id/iV_Support"
+        android:id="@+id/iV_UserAgreement"
         style="@style/MenuIconStyle"
         app:layout_constraintBottom_toBottomOf="@+id/tV_UserNote"
         app:layout_constraintEnd_toEndOf="parent"
