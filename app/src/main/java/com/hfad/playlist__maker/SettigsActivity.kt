@@ -34,7 +34,7 @@ class SettigsActivity : AppCompatActivity() {
         //Обработка нажатия на кнопку "Написать в поддержку"
         val btnUserAgreementId = findViewById<ImageView>(R.id.iV_Support)
         btnUserAgreementId.setOnClickListener{
-            val url = "http://www.example.com";
+            val url = "https://yandex.ru/legal/practicum_offer/";
             val agreementIntent = Intent(Intent.ACTION_VIEW);
             agreementIntent.setData(Uri.parse(url));
             startActivity(agreementIntent)
