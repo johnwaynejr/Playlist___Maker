@@ -6,10 +6,19 @@
     android:orientation="vertical"
     android:padding="15dp">
 
-    <EditText
-        android:id="@+id/et_find"
-        android:hint="@string/search"
-        style="@style/edit_text_find" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/et_find"
+            style="@style/edit_text_find"
+            android:hint="@string/search" />
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/ButtonStyleTransparent"
+            android:text="X" />
+    </FrameLayout>
 
     <Button
         android:id="@+id/btn_find"
