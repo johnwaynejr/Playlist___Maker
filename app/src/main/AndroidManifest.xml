@@ -18,7 +18,8 @@
             android:exported="false" />
         <activity
             android:name=".FindActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SettigsActivity"
             android:exported="false" />

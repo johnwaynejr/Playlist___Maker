@@ -15,18 +15,18 @@ class SettigsActivity : AppCompatActivity() {
         val btnShareId = findViewById<ImageView>(R.id.iV_Share)
         btnShareId.setOnClickListener {
             val sendIntent = Intent(Intent.ACTION_SEND)
-            sendIntent.putExtra(Intent.EXTRA_TEXT, "https://practicum.yandex.ru/android-developer/")
-            sendIntent.type = "text/plain"
+            sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.link))
+            sendIntent.type = getString(R.string.send_intent_type)
             startActivity(sendIntent)
         }
         //Обработка нажатия на кнопку "Написать в поддержку"
         val btnSupportId = findViewById<ImageView>(R.id.iV_Support)
         btnSupportId.setOnClickListener{
-            val subject = "Сообщение разработчикам и разработчицам приложения Playlist Maker"
-            val message = "Спасибо разработчикам и разработчицам за крутое приложение!"
+            val subject = getString(R.string.mail_subject)
+            val message = getString(R.string.mail_message)
             val supportIntent = Intent(Intent.ACTION_SENDTO)
-            supportIntent.data = Uri.parse("mailto:")
-            supportIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("for_mail_box@mail.ru"))
+            supportIntent.data = Uri.parse(getString(R.string.uri_parse))
+            supportIntent.putExtra(Intent.EXTRA_EMAIL,getString(R.string.email))
             supportIntent.putExtra(Intent.EXTRA_SUBJECT, subject)
             supportIntent.putExtra(Intent.EXTRA_TEXT, message)
             startActivity(supportIntent)
@@ -35,12 +35,18 @@ class SettigsActivity : AppCompatActivity() {
         //Обработка нажатия на кнопку "Написать в поддержку"
         val btnUserAgreementId = findViewById<ImageView>(R.id.iV_UserAgreement)
         btnUserAgreementId.setOnClickListener{
-            val url = "https://yandex.ru/legal/practicum_offer/";
+            val url = getString(R.string.offer);
             val agreementIntent = Intent(Intent.ACTION_VIEW);
             agreementIntent.setData(Uri.parse(url));
             startActivity(agreementIntent)
         }
 
+        //Обработка нажатия на кнопку "Назад"
+        val btnBackId = findViewById<ImageView>(R.id.iV_ArrowBack)
+        btnBackId.setOnClickListener{
+            val displayIntent = Intent(this, MainActivity::class.java)
+            startActivity(displayIntent)
+        }
 
     }
 }
