@@ -12,16 +12,16 @@ class SettigsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
 
         //Обработка нажатия на кнопку "Поделиться приложением"
-        val btnShareId = findViewById<ImageView>(R.id.iV_Share)
-        btnShareId.setOnClickListener {
+        val btnShare = findViewById<ImageView>(R.id.imageViewShare)
+        btnShare.setOnClickListener {
             val sendIntent = Intent(Intent.ACTION_SEND)
             sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.link))
             sendIntent.type = getString(R.string.send_intent_type)
             startActivity(sendIntent)
         }
         //Обработка нажатия на кнопку "Написать в поддержку"
-        val btnSupportId = findViewById<ImageView>(R.id.iV_Support)
-        btnSupportId.setOnClickListener{
+        val btnSupport = findViewById<ImageView>(R.id.imageViewSupport)
+        btnSupport.setOnClickListener{
             val subject = getString(R.string.mail_subject)
             val message = getString(R.string.mail_message)
             val supportIntent = Intent(Intent.ACTION_SENDTO)
@@ -33,8 +33,8 @@ class SettigsActivity : AppCompatActivity() {
         }
 
         //Обработка нажатия на кнопку "Написать в поддержку"
-        val btnUserAgreementId = findViewById<ImageView>(R.id.iV_UserAgreement)
-        btnUserAgreementId.setOnClickListener{
+        val btnUserAgreement = findViewById<ImageView>(R.id.imageViewUserAgreement)
+        btnUserAgreement.setOnClickListener{
             val url = getString(R.string.offer);
             val agreementIntent = Intent(Intent.ACTION_VIEW);
             agreementIntent.setData(Uri.parse(url));
@@ -42,8 +42,8 @@ class SettigsActivity : AppCompatActivity() {
         }
 
         //Обработка нажатия на кнопку "Назад"
-        val btnBackId = findViewById<ImageView>(R.id.iV_ArrowBack)
-        btnBackId.setOnClickListener{
+        val btnBack = findViewById<ImageView>(R.id.settingsArrowBack)
+        btnBack.setOnClickListener{
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
         }

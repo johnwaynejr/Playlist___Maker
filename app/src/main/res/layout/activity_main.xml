@@ -8,7 +8,7 @@
     android:background="?attr/colorPrimary">
 
     <TextView
-        android:id="@+id/tV_mm_header"
+        android:id="@+id/mainHeader"
         style="@style/TitleTextStyle"
         android:layout_gravity="start"
         android:paddingBottom="40dp"

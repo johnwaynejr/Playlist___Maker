@@ -8,94 +8,94 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tV_as_header"
+        android:id="@+id/settingsHeader"
         style="@style/TitleTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin"
         android:text="@string/as_header_text"
         android:textColor="?attr/colorOnSecondary"
-        app:layout_constraintStart_toEndOf="@+id/iV_ArrowBack"
+        app:layout_constraintStart_toEndOf="@+id/settingsArrowBack"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/iV_ArrowBack"
+        android:id="@+id/settingsArrowBack"
         android:layout_width="@dimen/as_arrow_back_size"
         android:layout_height="@dimen/as_arrow_back_size"
         android:layout_marginStart="@dimen/as_margin"
-        app:layout_constraintBottom_toBottomOf="@+id/tV_as_header"
+        app:layout_constraintBottom_toBottomOf="@+id/settingsHeader"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tV_as_header"
+        app:layout_constraintTop_toTopOf="@+id/settingsHeader"
         app:srcCompat="@drawable/ic_arrow_back"
         app:tint="?attr/colorOnSecondary" />
 
     <TextView
-        android:id="@+id/tV_BlackTheme"
+        android:id="@+id/textViewBlackTheme"
         style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top_big"
         android:text="@string/dark_theme"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_as_header" />
+        app:layout_constraintTop_toBottomOf="@+id/settingsHeader" />
 
     <TextView
-        android:id="@+id/tV_ShareApp"
+        android:id="@+id/textViewShareApp"
         style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/share_app"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_BlackTheme" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewBlackTheme" />
 
     <TextView
-        android:id="@+id/tV_WriteToSupport"
+        android:id="@+id/textViewWriteToSupport"
         style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/mail_to_support"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_ShareApp" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewShareApp" />
 
     <TextView
-        android:id="@+id/tV_UserNote"
+        android:id="@+id/textViewUserNote"
         style="@style/MenuTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/user_agreement"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tV_WriteToSupport" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewWriteToSupport" />
 
     <Switch
-        android:id="@+id/Switch"
+        android:id="@+id/switchBlackTheme"
         style="@style/SwitchStyle"
         android:thumbTint="?attr/colorSecondaryVariant"
         android:trackTint="?attr/colorSecondaryVariant"
-        app:layout_constraintBottom_toBottomOf="@+id/tV_BlackTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewBlackTheme"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tV_BlackTheme"
+        app:layout_constraintTop_toTopOf="@+id/textViewBlackTheme"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
-        android:id="@+id/iV_Share"
+        android:id="@+id/imageViewShare"
         style="@style/MenuIconStyle"
-        app:layout_constraintBottom_toBottomOf="@+id/tV_ShareApp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewShareApp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tV_ShareApp"
+        app:layout_constraintTop_toTopOf="@+id/textViewShareApp"
         app:srcCompat="@drawable/ic_share" />
 
     <ImageView
-        android:id="@+id/iV_Support"
+        android:id="@+id/imageViewSupport"
         style="@style/MenuIconStyle"
-        app:layout_constraintBottom_toBottomOf="@+id/tV_WriteToSupport"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewWriteToSupport"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tV_WriteToSupport"
+        app:layout_constraintTop_toTopOf="@+id/textViewWriteToSupport"
         app:srcCompat="@drawable/ic_support" />
 
     <ImageView
-        android:id="@+id/iV_UserAgreement"
+        android:id="@+id/imageViewUserAgreement"
         style="@style/MenuIconStyle"
-        app:layout_constraintBottom_toBottomOf="@+id/tV_UserNote"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewUserNote"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/tV_UserNote"
+        app:layout_constraintTop_toTopOf="@+id/textViewUserNote"
         app:srcCompat="@drawable/ic_arrow_fwd" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

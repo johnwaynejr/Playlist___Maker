@@ -17,7 +17,7 @@
            app:srcCompat="@drawable/ic_arrow_back"
            app:tint="?attr/colorOnSecondary" />
        <TextView
-        android:id="@+id/tV_as_header"
+        android:id="@+id/settingsHeader"
         style="@style/TitleTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:text="@string/btn_find_text"

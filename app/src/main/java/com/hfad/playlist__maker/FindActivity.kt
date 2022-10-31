@@ -68,8 +68,8 @@ class FindActivity : AppCompatActivity() {
         inputEditText.addTextChangedListener(simpleTextWatcher)
 
         //Обработка нажатия на кнопку "Назад"
-        val btnBackId = findViewById<ImageView>(R.id.iV_FA_ArrowBack)
-        btnBackId.setOnClickListener{
+        val btnBack = findViewById<ImageView>(R.id.iV_FA_ArrowBack)
+        btnBack.setOnClickListener{
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
         }
