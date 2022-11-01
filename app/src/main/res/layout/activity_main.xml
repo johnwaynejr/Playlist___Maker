@@ -9,13 +9,9 @@
 
     <TextView
         android:id="@+id/main_header"
-        style="@style/TitleTextStyle"
-        android:layout_gravity="start"
-        android:paddingBottom="@dimen/header_bottom_padding"
+        style="@style/TitleTextStyleMain"
         android:text="@string/main_menu_header"
-        android:textColor="@color/white"
         />
-
     <Button
         android:id="@+id/btn_find_am"
         style="@style/ButtonStyle"

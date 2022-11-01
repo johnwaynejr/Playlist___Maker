@@ -44,8 +44,7 @@ class SettigsActivity : AppCompatActivity() {
         //Обработка нажатия на кнопку "Назад"
         val btnBack = findViewById<ImageView>(R.id.settings_arrow_back)
         btnBack.setOnClickListener{
-            val displayIntent = Intent(this, MainActivity::class.java)
-            startActivity(displayIntent)
+            onBackPressed()
         }
 
     }

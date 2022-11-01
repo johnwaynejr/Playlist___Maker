@@ -19,9 +19,7 @@
        <TextView
         android:id="@+id/settings_header"
         style="@style/TitleTextStyle"
-        android:layout_marginStart="@dimen/as_margin"
-        android:text="@string/btn_find_text"
-        android:textColor="?attr/colorOnSecondary" />
+        android:text="@string/btn_find_text" />
 
    </LinearLayout>
 

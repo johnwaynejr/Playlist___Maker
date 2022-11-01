@@ -10,10 +10,8 @@
     <TextView
         android:id="@+id/settings_header"
         style="@style/TitleTextStyle"
-        android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin"
         android:text="@string/as_header_text"
-        android:textColor="?attr/colorOnSecondary"
         app:layout_constraintStart_toEndOf="@+id/settings_arrow_back"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,7 +29,6 @@
     <TextView
         android:id="@+id/text_view_black_theme"
         style="@style/MenuTextStyle"
-        android:layout_marginStart="@dimen/as_margin"
         android:layout_marginTop="@dimen/as_margin_top_big"
         android:text="@string/dark_theme"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,8 +37,6 @@
     <TextView
         android:id="@+id/text_view_share_app"
         style="@style/MenuTextStyle"
-        android:layout_marginStart="@dimen/as_margin"
-        android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/share_app"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_black_theme" />
@@ -49,8 +44,6 @@
     <TextView
         android:id="@+id/text_view_write_to_support"
         style="@style/MenuTextStyle"
-        android:layout_marginStart="@dimen/as_margin"
-        android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/mail_to_support"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_share_app" />
@@ -58,8 +51,6 @@
     <TextView
         android:id="@+id/text_view_user_note"
         style="@style/MenuTextStyle"
-        android:layout_marginStart="@dimen/as_margin"
-        android:layout_marginTop="@dimen/as_margin_top"
         android:text="@string/user_agreement"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_write_to_support" />
