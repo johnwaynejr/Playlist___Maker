@@ -12,7 +12,7 @@ class SettigsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_settings)
 
         //Обработка нажатия на кнопку "Поделиться приложением"
-        val btnShare = findViewById<ImageView>(R.id.imageViewShare)
+        val btnShare = findViewById<ImageView>(R.id.iv_share)
         btnShare.setOnClickListener {
             val sendIntent = Intent(Intent.ACTION_SEND)
             sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.link))
@@ -20,7 +20,7 @@ class SettigsActivity : AppCompatActivity() {
             startActivity(sendIntent)
         }
         //Обработка нажатия на кнопку "Написать в поддержку"
-        val btnSupport = findViewById<ImageView>(R.id.imageViewSupport)
+        val btnSupport = findViewById<ImageView>(R.id.iv_support)
         btnSupport.setOnClickListener{
             val subject = getString(R.string.mail_subject)
             val message = getString(R.string.mail_message)
@@ -33,7 +33,7 @@ class SettigsActivity : AppCompatActivity() {
         }
 
         //Обработка нажатия на кнопку "Написать в поддержку"
-        val btnUserAgreement = findViewById<ImageView>(R.id.imageViewUserAgreement)
+        val btnUserAgreement = findViewById<ImageView>(R.id.iv_user_agreement)
         btnUserAgreement.setOnClickListener{
             val url = getString(R.string.offer);
             val agreementIntent = Intent(Intent.ACTION_VIEW);
@@ -42,7 +42,7 @@ class SettigsActivity : AppCompatActivity() {
         }
 
         //Обработка нажатия на кнопку "Назад"
-        val btnBack = findViewById<ImageView>(R.id.settingsArrowBack)
+        val btnBack = findViewById<ImageView>(R.id.settings_arrow_back)
         btnBack.setOnClickListener{
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)

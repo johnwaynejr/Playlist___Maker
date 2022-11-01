@@ -8,28 +8,28 @@
     android:background="?attr/colorPrimary">
 
     <TextView
-        android:id="@+id/mainHeader"
+        android:id="@+id/main_header"
         style="@style/TitleTextStyle"
         android:layout_gravity="start"
-        android:paddingBottom="40dp"
+        android:paddingBottom="@dimen/header_bottom_padding"
         android:text="@string/main_menu_header"
         android:textColor="@color/white"
         />
 
     <Button
-        android:id="@+id/btnFind"
+        android:id="@+id/btn_find_am"
         style="@style/ButtonStyle"
         android:text="@string/btn_find_text"
         app:icon="@drawable/ic_fnd"
         />
     <Button
-        android:id="@+id/btnMedia"
+        android:id="@+id/btn_media_am"
         style="@style/ButtonStyle"
         android:text="@string/btn_media_text"
         app:icon="@drawable/ic_mediateka"
         />
     <Button
-        android:id="@+id/btnSettings"
+        android:id="@+id/btn_settings_am"
         style="@style/ButtonStyle"
         android:text="@string/btn_settings_text"
         app:icon="@drawable/ic_sttngs"

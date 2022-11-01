@@ -11,13 +11,13 @@
        android:layout_height="wrap_content"
        android:orientation="horizontal">
        <ImageView
-           android:id="@+id/iV_FA_ArrowBack"
+           android:id="@+id/find_activity_arrow_back"
            android:layout_width="@dimen/as_arrow_back_size"
            android:layout_height="@dimen/as_arrow_back_size"
            app:srcCompat="@drawable/ic_arrow_back"
            app:tint="?attr/colorOnSecondary" />
        <TextView
-        android:id="@+id/settingsHeader"
+        android:id="@+id/settings_header"
         style="@style/TitleTextStyle"
         android:layout_marginStart="@dimen/as_margin"
         android:text="@string/btn_find_text"

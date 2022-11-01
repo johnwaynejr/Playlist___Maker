@@ -11,4 +11,5 @@
     <dimen name="as_margin_top_big">61dp</dimen>
     <dimen name="as_text_size">16sp</dimen>
     <dimen name="edit_text_min_height">48dp</dimen>
+    <dimen name="header_bottom_padding">40dp</dimen>
 </resources>
