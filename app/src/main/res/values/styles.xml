@@ -89,5 +89,24 @@
         <item name="android:minHeight">@dimen/edit_text_min_height</item>
     </style>
 
+    <style name="track_name">
+        <item name="android:textSize">@dimen/as_text_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="track_author">
+        <item name="android:textSize">@dimen/tl_text_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="tl_arrow">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
 </resources>
 
