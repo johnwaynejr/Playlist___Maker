@@ -12,5 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Playlist__Maker"
+
+rootProject.name = "Playlist___Maker"
 include ':app'
