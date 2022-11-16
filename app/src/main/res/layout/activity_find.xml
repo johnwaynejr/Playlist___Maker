@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="@dimen/as_margin">
 
@@ -42,5 +43,12 @@
         android:id="@+id/btn_find"
         style="@style/ButtonStyleLight"
         android:text="@string/btn_find_text" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/track_list_layout"/>
+
 
 </LinearLayout>
