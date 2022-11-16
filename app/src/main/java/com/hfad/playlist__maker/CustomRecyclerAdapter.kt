@@ -8,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners
 
 class CustomRecyclerAdapter(private val trackList: ArrayList<Track>) : RecyclerView
 .Adapter<CustomRecyclerAdapter.MyViewHolder>() {
@@ -31,7 +32,12 @@ class CustomRecyclerAdapter(private val trackList: ArrayList<Track>) : RecyclerV
         holder.trackTextView.text = trackList.get(0).trackName
         holder.artistTextView.text = "${trackList.get(0).artistName} $dot ${trackList.get(0).trackTime}"
         val imageUrl =trackList.get(0).artworkUrl100
-        Glide.with(applicationContext).load(imageUrl).into(holder.image)
+        Glide.with(holder.itemView.context)
+            .load(imageUrl)
+            .placeholder(R.drawable.ic_arrow_back)
+            .centerInside()
+            .transform(RoundedCorners(10))
+            .into(holder.image)
     }
 
     override fun getItemCount() = trackList.size
