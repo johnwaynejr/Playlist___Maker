@@ -32,17 +32,18 @@
         <EditText
             android:id="@+id/et_find"
             style="@style/edit_text_find"
-            android:hint="@string/btn_find_text" />
+            android:hint="@string/btn_find_text"
+            android:drawableStart="@drawable/ic_fnd"
+            android:drawableTint="@color/gray_element"
+            android:drawablePadding="@dimen/mm_btn_icon_padding"
+            android:background="@drawable/edit_text_bg"/>
         <Button
             android:id="@+id/btn_clear"
             style="@style/ButtonStyleTransparent"
             android:text="@string/btn_clear" />
     </FrameLayout>
 
-    <Button
-        android:id="@+id/btn_find"
-        style="@style/ButtonStyleLight"
-        android:text="@string/btn_find_text" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"

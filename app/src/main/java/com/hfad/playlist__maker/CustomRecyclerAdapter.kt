@@ -16,10 +16,23 @@ class CustomRecyclerAdapter(private val trackList: ArrayList<Track>) : RecyclerV
 
 
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val trackTextView: TextView = itemView.findViewById(R.id.trackName)
-        val artistTextView: TextView = itemView.findViewById(R.id.trackArtist)
-        val image:ImageView = itemView.findViewById(R.id.artistCover)
-    }
+        var trackTextView: TextView = itemView.findViewById(R.id.trackName)
+        var artistTextView: TextView = itemView.findViewById(R.id.trackArtist)
+        var image:ImageView = itemView.findViewById(R.id.artistCover)
+
+            fun bind(track: Track) {
+            trackTextView.text = track.trackName
+            artistTextView.text = "${track.artistName} · ${track.trackTime}"
+
+                Glide.with(itemView.context)
+                    .load(track.artworkUrl100)
+                    .placeholder(R.drawable.ic_arrow_back)
+                    .fitCenter()
+                    .transform(RoundedCorners(10))
+                    .into(image)
+            }
+
+        }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context)
@@ -28,16 +41,7 @@ class CustomRecyclerAdapter(private val trackList: ArrayList<Track>) : RecyclerV
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        val dot = "·"
-        holder.trackTextView.text = trackList.get(0).trackName
-        holder.artistTextView.text = "${trackList.get(0).artistName} $dot ${trackList.get(0).trackTime}"
-        val imageUrl =trackList.get(0).artworkUrl100
-        Glide.with(holder.itemView.context)
-            .load(imageUrl)
-            .placeholder(R.drawable.ic_arrow_back)
-            .fitCenter()
-            .transform(RoundedCorners(10))
-            .into(holder.image)
+        holder.bind(trackList[position])
     }
 
     override fun getItemCount() = trackList.size
