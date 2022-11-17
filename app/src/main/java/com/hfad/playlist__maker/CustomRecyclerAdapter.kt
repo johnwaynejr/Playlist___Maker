@@ -35,7 +35,7 @@ class CustomRecyclerAdapter(private val trackList: ArrayList<Track>) : RecyclerV
         Glide.with(holder.itemView.context)
             .load(imageUrl)
             .placeholder(R.drawable.ic_arrow_back)
-            .centerInside()
+            .fitCenter()
             .transform(RoundedCorners(10))
             .into(holder.image)
     }

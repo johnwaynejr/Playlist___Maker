@@ -6,14 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingTop="10dp">
+    android:paddingTop="@dimen/mm_btn_margin_bottom">
 
         <ImageView
             android:id="@+id/artistCover"
             android:layout_width="@dimen/tl_image_view_size"
-            android:layout_height="@dimen/tl_image_view_size"
-            app:srcCompat="@drawable/ic_arrow_back"
-            app:tint="?attr/colorOnSecondary"/>
+            android:layout_height="@dimen/tl_image_view_size" />
 
         <LinearLayout
             android:layout_width="wrap_content"
