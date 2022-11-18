@@ -34,7 +34,6 @@
             style="@style/edit_text_find"
             android:hint="@string/btn_find_text"
             android:drawableStart="@drawable/ic_fnd"
-            android:drawableTint="@color/gray_element"
             android:drawablePadding="@dimen/mm_btn_icon_padding"
             android:background="@drawable/edit_text_bg"/>
         <Button
@@ -49,7 +48,7 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="@dimen/twenty_four"
         tools:listitem="@layout/track_list_layout"/>
-
 
 </LinearLayout>
