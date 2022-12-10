@@ -17,4 +17,6 @@
     <string name="send_intent_type">text/plain</string>
     <string name="offer">https://yandex.ru/legal/practicum_offer/</string>
     <string name="btn_clear">X</string>
+    <string name="nothing_found">Ничего не найдено</string>
+    <string name="something_went_wrong">Что-то пошло не так</string>
 </resources>

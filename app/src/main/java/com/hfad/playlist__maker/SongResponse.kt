@@ -1,7 +1,6 @@
-package com.hfad.playlist__maker
+package com.hfad.playlist___maker
 
-import com.hfad.playlist___maker.Song
+import com.hfad.playlist___maker.Track
 
-class SongResponse  (val searchType: String,
-                     val expression: String,
-                     val results: List<Song>)
+class SongResponse  (val resultCount: Int,
+                     val results: List<Track>)
