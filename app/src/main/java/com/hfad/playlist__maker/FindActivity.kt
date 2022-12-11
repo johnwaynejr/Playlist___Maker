@@ -115,7 +115,7 @@ class FindActivity : AppCompatActivity() {
                             tracks.clear()
                             if (response.body()?.results?.isNotEmpty() == true) {
                                 tracks.addAll(response.body()?.results!!)
-                                adapter.notifyDataSetChanged()
+                                trackList.adapter!!.notifyDataSetChanged()
                             }
                             if (tracks.isEmpty()) {
                                 showMessage(getString(R.string.nothing_found), "")
