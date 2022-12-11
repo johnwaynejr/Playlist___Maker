@@ -22,7 +22,7 @@ class CustomRecyclerAdapter(private val trackList: ArrayList<Track>) : RecyclerV
 
             fun bind(track: Track) {
             trackTextView.text = track.trackName
-            artistTextView.text = "${track.artistName} · ${track.trackTime}"
+            this.artistTextView.text = "${track.artistName} · ${track.trackTime}"
 
                 Glide.with(itemView.context)
                     .load(track.artworkUrl100)
